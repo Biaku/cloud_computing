@@ -1,55 +1,377 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .fred {
+            color: #ac103d;
+        }
+
+        .fblue {
+            color: #20145f;
+        }
+        h1{
+            color: #ac103d;
+        }
+        p{
+            color: #20145f;
+        }
+        .card-title{
+            color: #20145f;
+        }
+    </style>
 
     <title>Cloud Computing</title>
-  </head>
-  <body>
-    
-    <div class="container">
-      
-      <div class="row">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
         <div class="col-md-12">
-          <h1>Cloud Computing</h1>
+            <h1 class="text-center mt-3">Cloud computing</h1>
         </div>
-      </div>
-      
-      <div class="card mb-3">
+    </div>
+    <!-- Cloud computing -->
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/cp2.png" class="card-img" width="150" height="200 ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">¿Que es el Cloud Computing?</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Historia del CP (linea del tiempo) -->
+    <div class="card-group">
+        <div class="card">
+            <img src="images/jon.jpg" class="card-img-top" width="483"
+                 height="392">
+            <div class="card-body">
+                <h5 class="card-title">John McCarthy</h5>
+                <p class="card-text">En 1961 John McCarthy fue el primero en sugerir el concepto de la computación en
+                    nube.</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/90.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">90´s</h5>
+                <p class="card-text">Las empresas comienzan a ofrecer redes privadas virtuales.</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/salesforce.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Salesforce</h5>
+                <p class="card-text">En 1999 Salesforce.com introdujo el término de entrega de aplicaciones
+                    empresariales a
+                    través de una página web</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-group mb-3">
+        <div class="card">
+            <img src="images/amazon2.jpg" class="card-img-top" width="483"
+                 height="392">
+            <div class="card-body">
+                <h5 class="card-title">Amazon web services</h5>
+                <p class="card-text">En 2002 Amazon era el siguiente en el tren al lanzar Amazon Web Service</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/googledocs.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Google docs</h5>
+                <p class="card-text">Así en 2006 llegaría Google Docs que realmente trajo la Computación en nube a la
+                    vanguardia
+                    -En el mismo año Amazon introdujo Elastic Compute Cloud (EC2). Así las empresas alquilaban equipos
+                    en
+                    las que podían ejecutar sus propias aplicaciones informáticas</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/capas.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Distintas capas</h5>
+                <p class="card-text">En 2010 se organiza el concepto en distintas capas: Infraestructura (LaaS),
+                    Plataforma
+                    (PaaS), programas (SaaS) y Red (NaaS).</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center"> Tipos de modelos de servicio en Cloud Computing</h1>
+        </div>
+    </div>
+    <br>
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://b3544f3e-a-62cb3a1a-s-sites.googlegroups.com/site/siclou003/conceptos-previos/capas-de-cloud-computing/aa.jpg?attachauth=ANoY7cqRmLdak0r_2CcQKLuo25XMyrUB9IKKHh3sPgGn6K5WcEiAOo7NRDwQ2FuNpw4UqZxL_G9WiXy2BAyed6JQbUA9jbUR9E6PMq-kPWbckTwgDfqqM_Je4W2HI7eOl56aIj1z4YuZXCB-i5OslHKYMXX6wEmgOyEd4QZQbNvsSkMBO4kvV0aW3er9S4DK8boV40PUheC6jxrOOg4k78SYUiRbMJOmMAZ3hI4Mr8JF9dCyT-qFUG-9tsgspidoYPK92LzbxWDa&attredirects=0"
+                     class="card-img">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Los tres principales son:</h5>
+                    <p class="card-text">IaaS</p>
+                    <p class="card-text">PaaS</p>
+                    <p class="card-text">SaaS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-6">
+            <div class="card-body">
+                <h5 class="card-title">PaaS:</h5>
+                <p class="card-text">En un modelo PaaS (Platform as a Service o Plataforma como Servicio)
+                    dispondremos
+                    de un entorno ya preparado por parte de nuestro proveedor. Podremos configurarlo, pero estaremos
+                    restringidos a las herramientas ofrecidas por nuestro proveedor.</p>
+                <p class="card-text">En este entorno, podemos personalizar la instalación y ejecución de
+                    aplicaciones.
+                    Por ejemplo, con la instalación de un CRM propio. Por el contrario, tendremos menor capacidad de
+                    personalización de recursos frente al modelo IaaS.</p>
+                <p class="card-text">Estas aplicaciones de este tipo son Azure de Microsoft, Cloud de IBM, Customer
+                    360
+                    Platform de SalesForce, Etc</p>
+            </div>
+        </div>
+        <div class="col col-6">
+            <div class="card-body">
+                <h5 class="card-title">IaaS:</h5>
+                <p class="card-text">Las siglas IaaS (del inglés Infraestructure as a Service o Infraestructura como
+                    Servicio) hacen referencia a un modelo de servicio en Cloud Computing en el que accederemos a
+                    recursos informáticos como servidores, unidades de almacenamiento o redes.</p>
+                <p class="card-text">Se trata de la opción más parecida la adquisición de hardware tradicional, con
+                    la
+                    diferencia de que contrataremos dichos recursos como servicio y físicamente no se encontrarán en
+                    nuestras instalaciones. En este sentido, desaparecen los costes de compra iniciales de los
+                    equipos y
+                    la necesidad de actualizar los mismos.</p>
+                <p class="card-text">Estas aplicaciones de este tipo son Amazon web services, Microsotf Azure,
+                    Etc</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-body">
+                <h5 class="card-title">Saas:</h5>
+                <p class="card-text">En el último modelo de servicio de Cloud Computing, SaaS (Software as a Service
+                    o
+                    Software como Servicio) únicamente accederemos a aplicaciones concretas, ejecutadas en la
+                    nube.</p>
+                <p class="card-text">Las actualizaciones y el mantenimiento técnico de la aplicación contratada
+                    correrán
+                    a cargo del proveedor. En función de las necesidades de nuestra empresa podremos escoger uno u
+                    otro
+                    modelo servicio de Cloud Computing.</p>
+                <p class="card-text">Estas aplicaciones de este tipo son Gmail, Facebook, twitter, Etc</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Modelos del Cloud Deployment</h1>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/nubep.jpg" class="card-img" width="150"
+                     height="200 ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Cloud Publica</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/nubepr.jpg" class="card-img" width="150"
+                     height="200 ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Cloud Privada</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hibrido -->
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/nubeh1.jpg" class="card-img" width="150"
+                     height="200 ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Cloud Hibrida</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Beneficios de
+                implementación
+                del cómputo en la nube</h1>
+        </div>
+    </div>
+
+    <div class="card mb-3 mt-3">
         <div class="row no-gutters">
 
-          <div class="col-md-4">
-            <img src="https://www.lapatria.com/sites/default/files/styles/620x/public/especiales/2014/Jul/629962-1090548.jpg" class="card-img" alt="...">
-          </div>
-
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Introduccion</h5>
-              <p class="card-text">texto de ejemplo</p>   
-              
-              <h5 class="card-title">Qué es Cloud Computing</h5>
-              <p class="card-text">texto de ejemplo</p> 
-
-              <h5 class="card-title">Historia del Cloud Computing</h5>
-              <p class="card-text">texto de ejemplo</p> 
+            <div class="col-md-4">
+                <img src="https://geekland.eu/wp-content/uploads/2016/02/Que-es-la-computaci%C3%B3n-en-la-nube.jpg">
             </div>
-          </div>
+
+            <div class="col-md-8">
+                <div class="card-body">
+
+                    <p class="card-text">La mayoría de departamentos de TI se ven obligados a
+                        dedicar
+                        una buena parte de su tiempo a la frustrante tarea de implementar, mantener
+                        y
+                        actualizar proyectos que, con demasiada frecuencia, no suponen un valor
+                        añadido
+                        en el balance final de la empresa. Cada vez más, los equipos de TI están
+                        volviendo sus miradas a la tecnología de cloud computing para minimizar el
+                        tiempo empleado en actividades de menor valor y centrarse en actividades más
+                        estratégicas, que tienen un mayor impacto en los procesos comerciales. </p>
+
+                </div>
+            </div>
 
         </div>
-      </div>
-
     </div>
-    
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">-Integración probada de servicios web</h5>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+            <h5 class="card-title">-Prestación de servicios de talla mundial.</h5>
+
+            <h5 class="card-title">-No necesita instalar ningún tipo de hardware o
+                software.</h5>
+
+            <h5 class="card-title">-Implementación más rápida y con menos riesgos</h5>
+
+            <h5 class="card-title">-Gran capacidad de personalización. </h5>
+
+            <h5 class="card-title">-Más opciones para los usuarios comerciales. </h5>
+
+            <h5 class="card-title">-Actualizaciones automáticas que no afectan negativamente
+                a
+                los recursos de TI. </h5>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <h1>Principales competidores en CC</h1>
+
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/google.jpg" class="card-img" width="150"
+                     height="200 ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Google</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Microsoft -->
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/micro.png" class="card-img" width="150"
+                     height="200 ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Microsoft</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Amazon -->
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/amazon.jpg" class="card-img" width="150"
+                     height="200 ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Amazon</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
 </html>
